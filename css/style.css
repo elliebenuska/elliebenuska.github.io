@@ -1,0 +1,98 @@
+/*font classes*/
+
+h1{
+  font-family: "futura-pt",sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  }
+
+h2{
+	font-family: "lust-display",serif;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 1.45em;
+}
+
+p{
+	font-family: "futura-pt",sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px
+}
+
+
+/*container*/
+.container{
+	padding: 75px;
+}
+
+
+/*nav*/
+
+#nav{
+	background-color: white;
+	opacity: 0.5;
+	margin: 33.5px 55px 0px 55px;
+}
+
+#nav li{
+	list-style-type: none;
+	font-family: "futura-pt",sans-serif;
+	font-size: 12px;
+	letter-spacing: 1.4px;
+	font-weight: 400;
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: auto;
+
+
+}
+
+
+/*header elements*/
+
+.header{
+	display: flex;
+	align-items: center;
+	margin: 30px 0px 75px 0px;
+}
+
+#logo{
+	display: flex;
+	flex-basis: 75%;
+}
+
+#social{
+	display: flex;
+	justify-content: flex-end;
+	flex-basis: 25%;
+}
+
+#instagram img{
+	width: 40%;
+	height: 40%;
+}
+
+
+/*about*/
+
+.about{
+	margin: 75px 0px 75px 0px;
+}
+
+/*portfolio*/
+
+.portfolio{
+	display: flex;
+	height: 1000px;
+
+}
+
+
+
