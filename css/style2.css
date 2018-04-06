@@ -1,0 +1,193 @@
+h1{
+  font-family: "futura-pt",sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  }
+
+h2{
+  font-family: "futura-pt",sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+}
+
+h3{
+	  font-family: "futura-pt",sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  line-height: 2em;
+}
+
+h4{
+  font-family: "futura-pt",sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  line-height: 2em;
+}
+
+.nav-row a{
+  color: black;
+}
+
+p{
+	font-family: "futura-pt",sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 25px
+}
+
+body{
+  overflow-y: auto;
+}
+
+
+
+.nav-row {
+	margin: 0px;
+	border-bottom: .5px solid black;
+	background-color: white;
+	align-items: center;
+	padding: 23px 15px 15px 15px;
+
+
+}
+.logo{
+	font-family: futura;
+	justify-content: center;
+	text-align: center;
+
+}
+.logo-side{
+	justify-content: flex-end;
+}
+
+
+
+.row-hero{
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.hero-image img{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.row-tagline{
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+  text-align: center;
+  margin: 0px;
+}
+
+.col-tagline{
+  padding: 200px 100px 200px 100px;
+}
+
+.row-contact{
+  justify-content: center;
+  align-items: center;
+}
+
+.col-contact h4{
+  padding: 150px 0px 100px 0px;
+  text-align: center;
+}
+
+input[type=text] {
+    border: 2px solid black;
+    border-radius: 0px;
+      font-family: "futura-pt",sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: black;
+  line-height: 2em;
+}
+input[type=text]:focus, textarea:focus {
+    border: 2px solid #e6e6e6;
+  box-shadow: 0 0 0px rgba(81, 203, 238, 1);
+}
+
+.row-contact-message{
+  padding: 25px 0px 25px 0px;
+}
+
+.form-control {
+    border: 2px solid black;
+    border-radius: 0px;
+      font-family: "futura-pt",sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: black;
+  line-height: 2em;
+}
+.form-control:focus, textarea:focus {
+    border: 2px solid #e6e6e6;
+  box-shadow: 0 0 0px rgba(81, 203, 238, 1);
+}
+.submit-button{
+  border: 2px solid black;
+  width: 100%;
+      font-family: "futura-pt",sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: black;
+  line-height: 2em;
+}
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 0px) and (max-width: 575.98px) { 
+	
+}
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

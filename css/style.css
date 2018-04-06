@@ -1,3 +1,16 @@
+/*clearfix*/
+
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
 /*font classes*/
 
 h1{
@@ -6,6 +19,7 @@ h1{
   letter-spacing: 3px;
   font-weight: 400;
   text-transform: uppercase;
+  color: black;
   }
 
 h2{
@@ -15,84 +29,278 @@ h2{
 	line-height: 1.45em;
 }
 
+h3{
+	  font-family: "futura-pt",sans-serif;
+  font-size: 34px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  line-height: 2em;
+}
+
 p{
 	font-family: "futura-pt",sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 400;
 	line-height: 25px
 }
 
 
-/*container*/
-.container{
-	padding: 75px;
-}
-
+/*BASE ELEMENTS*/
 
 /*nav*/
 
-#nav{
+.logo-bar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 0px;
+	width: 100%;
+	position: fixed;
+	border-bottom: .5px solid black;
+	top: 0%;
 	background-color: white;
-	opacity: 0.5;
-	margin: 33.5px 55px 0px 55px;
+	height: 75px;
+
 }
 
-#nav li{
-	list-style-type: none;
+
+#logo{
+	display: flex;
+/*	position: fixed;
+  	top: 5%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);*/
+
+}
+
+#nav-about h3{
+  font-family: "futura-pt",sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+
+
+}
+
+.rotate-right{
+
+/* Safari */
+-webkit-transform: rotate(90deg);
+
+/* Firefox */
+-moz-transform: rotate(90deg);
+
+/* IE */
+-ms-transform: rotate(90deg);
+
+/* Opera */
+-o-transform: rotate(90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+  position: fixed;
+  top: 50%;
+  left: 95%;
+}
+
+.rotate-left{
+
+/*/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+
+  position: fixed;
+  top: 50%;
+  left: 0%;*/
+}
+
+#nav-work h3{
+  font-family: "futura-pt",sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+
+.container {
+    position: absolute;
+    cursor: pointer;
+    float: right;
+    display: none;
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+/*footer*/
+
+footer{
+	display: flex;
+	flex-basis: 100%;
+	background-color: #ece9e7;
+	justify-content: center;
+}
+
+.footer {
+	margin: 75px 75px 75px 75px;
+}
+
+footer a{
 	font-family: "futura-pt",sans-serif;
 	font-size: 12px;
 	letter-spacing: 1.4px;
 	font-weight: 400;
-	display: block;
-	float: left;
 	text-align: center;
-	padding: 15px;
-	text-decoration: none;
 	text-transform: uppercase;
-	width: auto;
+	padding: 7px;
+	color: black;
+}
 
+
+
+/*HOMEPAGE*/
+
+
+/*first section background*/
+
+
+
+
+
+
+
+/*.hero-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.home-hero-background {
+
+}
+
+.home-hero-background img{
+
+	width:100%;
+height:auto;
+}
+*/
+
+
+
+section {
+ /* background-image: url("../images/hero-background.jpg");*/
+  height: 1000px;
 
 }
 
 
-/*header elements*/
 
-.header{
+
+/*tagline section background*/
+
+.tagline-background{
 	display: flex;
+	background-color: #e6e6e6;
+	justify-content: center;
 	align-items: center;
-	margin: 30px 0px 75px 0px;
-}
-
-#logo{
-	display: flex;
-	flex-basis: 75%;
-}
-
-#social{
-	display: flex;
-	justify-content: flex-end;
-	flex-basis: 25%;
-}
-
-#instagram img{
-	width: 40%;
-	height: 40%;
-}
-
-
-/*about*/
-
-.about{
-	margin: 75px 0px 75px 0px;
-}
-
-/*portfolio*/
-
-.portfolio{
-	display: flex;
-	height: 1000px;
 
 }
+
+
+/*tagline section words*/
+
+.tagline{
+	text-align: center;
+
+}
+
+/*contact form*/
+
+.contact-form{
+
+}
+
+
+
+
+/*WORK PAGE*/
+
+
+
+
+
+/*ABOUT PAGE*/
+
+
+/*responsive*/
+
+@media only screen and (max-width: 1300px) {
+    .rotate-right{
+    	display: none;
+    }
+
+    .rotate-left{
+    	display: none;
+    }
+
+    h3 {
+      font-size: 75%;
+    }
+
+    .container {
+    cursor: pointer;
+    float: right;
+    display: inline-block;
+
+
+
+}
+
+.logo-bar{
+  position: absolute;
+  }
+
+  .hamburger{
+    position: absolute;
+    float: right;
+  }
+
+
+}
+
+
+
+
+
+
+
 
 
 
