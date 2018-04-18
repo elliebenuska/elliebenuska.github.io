@@ -1,4 +1,7 @@
 
+$("document").ready(function(){
+
+
 var selectedInput = null;
 $(document).ready(function() {
     $('button').focus(function() {
@@ -7,9 +10,22 @@ $(document).ready(function() {
 });
 
 
-$(".submit-button").click(function(event){
-    event.preventDefault();
-    $(".submit-button").css("background-color", "#e6e6e6");
-    console.log("working")
+$("form").submit(formSubmit);
+
+
+
 });
 
+function formSubmit(event){
+
+	event.preventDefault();
+
+	
+	var formSubmitted = $(".submit-button").addClass("form-submitted");
+
+	setTimeout(function() {
+  		formSubmitted.removeClass("form-submitted");
+		}, 200);
+
+		console.log("form submit");
+};
